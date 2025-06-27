@@ -1,0 +1,6 @@
+// To install express:
+npm init -y
+npm install express ws
+
+// To create a certificate:
+openssl req -x509 -newkey rsa:2048 -nodes -keyout key.pem -out cert.pem -days 365

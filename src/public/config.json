@@ -1,0 +1,11 @@
+{
+  "clipsPath": "clips/",
+  "initialClipIndex": 0,
+  "finalClipIndex": 3,
+  "port": 8080,
+  "showDebug": true,
+  "useDocumentOverVideoFullscreen": true,
+  "useSyncingLogic": false,
+  "autoPlayOnLoad": true,
+  "offlineUrls": [ "/client.html", "/client.js", "/favicon.ico", "/config.json" ]
+}
