@@ -28,7 +28,7 @@
     debug.style.padding = '10px';
     debug.style.fontSize = '14px';
     debug.style.fontFamily = 'monospace';
-    debug.style.zIndex = showDebug ? '9999' : '0';
+    debug.style.zIndex = showDebug ? '9999' : '-1';
     debug.style.maxWidth = '100%';
     debug.style.maxHeight = '50%';
     debug.style.overflowY = 'auto';
@@ -125,7 +125,7 @@
       case 'next': if (currentClip !== config.finalClipIndex) {loadClip(currentClip + 1); video.play(); } break;
       case 'prev': if (currentClip !== initialClipIndex) { loadClip(currentClip - 1); video.play(); } break;
       case 'black': video.style.display = (video.style.display === 'none') ? 'inline' : 'none'; break;
-      case 'first': loadClip(initialClipIndex);
+      case 'first': loadClip(initialClipIndex); break;
       case 'play':
         if (config.useSyncingLogic) video.currentTime += latency + seekLatency;
         video.play(); break;
